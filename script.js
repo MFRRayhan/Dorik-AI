@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', function () {
         const header = document.querySelector('header');
-        const stickyPoint = 120;
+        const stickyPoint = 100;
 
         if (window.scrollY >= stickyPoint) {
             header.classList.add('sticky-header');
