@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/html-5.png" type="image/x-icon">
+    <!-- fontawesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>RRF Challenge - 02</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header class="bg-[#FFF9F3] py-4 border-b border-gray-300">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="logo w-20">
+                    <img src="assets/img/header-logo.svg" alt="">
+                </div>
+                <ul class="main-menu flex gap-6">
+                    <li><a href="" class="capitalize font-medium">✨ dorik ai</a></li>
+                    <li><a href="" class="capitalize font-medium">product <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="" class="capitalize font-medium">templates</a></li>
+                    <li><a href="" class="capitalize font-medium">pricing</a></li>
+                    <li><a href="" class="capitalize font-medium">resources <i class="fa fa-angle-down"></i></a></li>
+                </ul>
+                <div class="header-btns">
+                    <div class="flex items-center gap-8">
+                        <a href="" class="capitalize text-[#3A30BC] text-sm font-medium duration-300 hover:text-[#3A30BC]">login</a>
+                        <a href="" class="capitalize text-[#3A30BC] border border-[#3A30BC] px-4 py-2 text-sm font-medium rounded-[5px] duration-300 hover:text-[#3A30BC]">sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-[#FFF9F3] pt-20 pb-56">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="font-bold text-[71px] leading-[71px] mb-8 text-[#17134A]">Build Websites with <br>the Power of AI</h1>
+                <p class="text-[22px] leading-[33px] text-[#45426e] max-w-2xl mx-auto">It takes minutes to finish a website with Dorik, it's simple, intuitive and can be easily learned by beginners</p>
+            </div>
+            <div class="flex items-center justify-center gap-6 mt-4">
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">landing pages</div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">AI generated content</div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">free stock images</div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">blogs</div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">web analytics</div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <i class="far fa-check-circle text-[18px] text-[#3A30BA]"></i>
+                    <div class="font-medium capitalize text-[18px]">white-label CMS</div>
+                </div>
+            </div>
+
+            <div class="hero-btn text-center mt-6 bg-center bg-no-repeat bg-[length:385px] bg-[url('assets/img/hero-btn-svg.svg')]">
+                <a href="" class="boxed-btn capitalize bg-[#3A30BA] text-[#FFF9F3] text-xl font-medium py-4 px-8 rounded-[5px] inline-block duration-300 hover:bg-[#12126E] hover:text-[#fff]">try <span class="lowercase">it</span> free <i class="fa fa-angle-right ml-2"></i></a>
+            </div>
+
+            <div class="logos flex justify-center items-center gap-10 mt-16 mb-6">
+                <span class="text-[#45426E]">Featured on:</span>
+                <img class="max-h-9" src="assets/img/ft-1.svg" alt="">
+                <img class="max-h-9" src="assets/img/ft-2.webp" alt="">
+                <img class="max-h-9" src="assets/img/ft-3.svg" alt="">
+                <img class="max-h-9" src="assets/img/ft-4.svg" alt="">
+                <img class="max-h-9" src="assets/img/ft-5.svg" alt="">
+            </div>
+
+            <a href="" class="flex justify-center">
+                <img  class="max-h-[136px]" src="assets/img/logo-bottom.png" alt="">
+            </a>
+
+            <div class="video-section mt-6 relative border-[20px] w-[85%] mx-auto bg-[linear-gradient(130deg, rgba(155, 144, 196, 0.1) 0%, rgba(62, 67, 127, 0.2) 100%) bg-[no-repeat] rounded-[26px]">
+                <img class="w-full mx-auto rounded-[20px] h-[470px] object-cover" src="assets/img/thumbnail.jpeg" alt="video thumbnail">
+
+                <button id="play-btn" type="button" class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-[#8C3BFC] text-white px-10 py-5 rounded-[10px] flex items-center justify-center duration-300 hover:bg-[#27A6FE]">
+                        <i class="fa fa-play text-[30px]"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="video-popup" style="display: none;" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
+                <div class="relative w-full max-w-4xl bg-[#330882] rounded-lg p-6">
+                    <button id="close-btn" type="button" class="absolute text-[#7A7287] font-bold text-6xl top-0 right-0 z-10 duration-300 hover:text-red-600">
+                        &times;
+                    </button>
+
+                    <div class="aspect-ratio" class="aspect-[16/9]">
+                        <video id="popup-video" src="assets/video/Dorik-AI-Intro.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial Section -->
+    <section class="testimonial-section -mt-32 mb-16">
+        <div class="container">
+            <div class="flex items-start justify-between bg-white border-b border-gray-200 shadow-sm">
+                <div class="w-4/12">
+                    <div class="single-testimonial-box text-center p-8">
+                        <img class="rounded-full w-[60px] h-[60px] object-cover mx-auto mb-4" src="assets/img/test-1.webp" alt="">
+                        <p class="text-lg">I can't tell you how much I love Dorik! <span class="font-bold bg-[#FCF2DE]"> I can create beautiful websites without even touching a line of code.</span></p>
+                        <div class="text-xl font-bold capitalize mt-4 color-two">Oday Mashalla </div>
+                        <small class="text-sm">Design Director @ humblebee</small>
+                    </div>
+                </div>
+
+                <div class="w-4/12">
+                    <div class="single-testimonial-box text-center p-8">
+                        <img class="rounded-full w-[60px] h-[60px] object-cover mx-auto mb-4" src="assets/img/test-3.jpg" alt="">
+                        <p class="text-lg"><span class="font-bold bg-[#FCF2DE]"> One of the best website building tools.</span> Great product!!</p>
+                        <div class="text-xl font-bold capitalize mt-4 color-two">Upen V.</div>
+                        <small class="text-sm">Founder @ Siteoly</small>
+                    </div>
+                </div>
+
+                <div class="w-4/12">
+                    <div class="single-testimonial-box text-center p-8">
+                        <img class="rounded-full w-[60px] h-[60px] object-cover mx-auto mb-4" src="assets/img/test-2.webp" alt="">
+                        <p class="text-lg">I'm so in love with this tool!<span class="font-bold bg-[#FCF2DE]">Building websites has never been this FAST and EASY!</span></p>
+                        <div class="text-xl font-bold capitalize mt-4 color-two">laura lang</div>
+                        <small class="text-sm">Design Fellow (ODD3), On Deck</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- testimonial below logos -->
+            <div class="testimonial-logos mt-14 mb-20">
+                <div class="flex items-center justify-center gap-2">
+                    <span style="color: rgb(222,35,142);">♡</span>
+                    <p class="text-xl font-semibold">Loved by cool people from </p>
+                </div>
+                <div class="flex justify-center items-center gap-10 mt-6">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-1.png" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-2.webp" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-3.webp" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-4.webp" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-5.webp" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-6.svg" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-7.webp" alt="">
+                    <img class="max-h-10 grayscale" src="assets/img/logo-8.svg" alt="">
+                </div>
+            </div>
+
+            <!-- logo below section one -->
+            <div class="bg-[#FFF9F3] mb-14 px-10 py-12 rounded-[5px]">
+                <div class="flex items-center justify-center gap-12">
+                    <div class="w-6/12">
+                        <div class="">
+                            <h2 class="font-bold text-[50px] leading-[50px] mb-8">Transform Your Ideas into Reality with AI </h2>
+                            <div class="text-xl">Bring your creative vision to life with Dorik AI</div>
+
+                            <div class="features mt-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">website generation</div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">AI-Generated Contents (Text & Images) </div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Build Website in Any Language </div>
+                                </div>
+                                <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                                    try dorik now
+                                    <i class="fa fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-6/12 text-center">
+                        <img src="assets/img/idea-thumbnail.webp" alt="">
+                        <p>Prompt: <em>"Build a website for my coffeeshop"</em></p>
+                    </div>
+                </div>
+
+                <div class="idea-box mt-12 pt-8 border-t border-gray-300">
+                    <div class="flex items-center justify-between gap-8">
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">stunning websites</div>
+                                <p class="text-lg ">Type a prompt, get a full website using the power of cutting-edge AI technology</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit" color="[object Object]"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Compelling Copies </div>
+                                <p class="text-lg">Generate all your website content in two steps—a prompt & a click!</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Pixel Perfect Images </div>
+                                <p class="text-lg">Type a prompt and generate the exact image on your mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logo below section two -->
+            <div class="bg-[#FDEFF7] mb-14 px-10 py-12 rounded-[5px]">
+                <div class="flex items-center justify-center gap-12">
+                    <div class="w-6/12">
+                        <div class="">
+                            <h2 class="font-bold text-[50px] leading-[50px] mb-8">No-Code Website Builder</h2>
+                            <div class="text-xl">Unleash your creativity with our easy-to-use and powerful website builder.</div>
+
+                            <div class="features mt-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Create websites in minutes without any code</div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Say goodbye to lengthy development time</div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Customize everything to match your vision</div>
+                                </div>
+                                <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                                    try dorik now
+                                    <i class="fa fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-6/12 text-center">
+                        <img src="assets/img/idea-thumbnail-02.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="idea-box mt-12 pt-8 border-t border-gray-300">
+                    <div class="flex items-center justify-between gap-8">
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool" color="[object Object]"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Drag & Drop Builder </div>
+                                <p class="text-lg ">Drag-and-drop builder makes website creation a breeze. No coding is required.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box" color="[object Object]"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Templates</div>
+                                <p class="text-lg">With pre-designed templates, you can quickly build your website.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid" color="[object Object]"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">250+ UI Blocks</div>
+                                <p class="text-lg">Pre-designed UI blocks to make your building journey faster</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logo below section three -->
+            <div class="bg-[#F1FAF7] mb-14 px-10 py-12  rounded-[5px]">
+                <div class="flex items-center justify-center gap-12">
+                    <div class="w-6/12">
+                        <div class="">
+                            <h2 class="font-bold text-[50px] leading-[50px] mb-8">White-Label CMS</h2>
+                            <div class="text-xl">A complete solution to build websites under your brand for your clients.</div>
+
+                            <div class="features mt-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Add your own brand’s logo and colors </div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Dedicated dashboard for your client </div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Build anything from blogs to directories </div>
+                                </div>
+                                <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                                    try dorik now
+                                    <i class="fa fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-6/12 text-center">
+                        <img src="assets/img/idea-thumbnail-03.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="idea-box mt-12 pt-8">
+                    <div class="flex items-center justify-between gap-8">
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3" color="[object Object]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Built-in Blogging Platform </div>
+                                <p class="text-lg ">Build and publish blogs with all the features you need to rank on Google and grow audience.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard" color="[object Object]"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">White Label Dashboard </div>
+                                <p class="text-lg">A white-label dashboard for your clients that you can brand as your own</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA]" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card" color="[object Object]"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Client Billing </div>
+                                <p class="text-lg">Send invoices and receive payments from your clients directly from your dashboard.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logo below section four -->
+            <div class="bg-[#EEEBFA] mb-14 px-10 py-12 rounded-[5px]">
+                <div class="flex items-center justify-center gap-12">
+                    <div class="w-6/12">
+                        <div class="">
+                            <h2 class="font-bold text-[50px] leading-[50px] mb-8 max-w-[420px]">Build with Airtable Data</h2>
+                            <div class="text-xl">Bring your Airtable Data to beautiful interfaces with our Airtable elements</div>
+
+                            <div class="features mt-6">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Present your data from Airtable into beautiful interfaces</div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Easy-to-use filter and search option for your users</div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa fa-check text-[#380588]"></i>
+                                    <div class="capitalize font-medium text-lg">Create blogs, job boards, shops, profiles, and more</div>
+                                </div>
+                                <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                                    try dorik now
+                                    <i class="fa fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-6/12 text-center">
+                        <img src="assets/img/idea-thumbnail-04.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="idea-box mt-12 pt-8 border-t border-gray-300">
+                    <div class="flex items-center justify-between gap-8">
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA] xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout" color="[object Object]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Beautiful Layouts</div>
+                                <p class="text-lg ">Showcase your data in any layout, like the grid, table, job board, etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA] xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap" color="[object Object]"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Realtime Update</div>
+                                <p class="text-lg">Update data on Airtable and it will be updated on your website instantly</p>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12">
+                            <div class="single-idea-box min-h-48">
+                            
+                                <svg class="text-[#3A30BA] xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database" color="[object Object]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+    
+                                <div class="font-semibold text-xl capitalize my-4">Advanced Customization</div>
+                                <p class="text-lg">Use Airtable as a data source in Dorik CMS and customize everything.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" px-10 py-12">
+                <div class="flex items-start">
+                    <div class="w-6/12">
+                        <h2 class="font-bold text-[60px] leading-[60px]">Join over 100k+ happy users from around the world!</h2>
+                        <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                            wall of love
+                            <i class="fa fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="w-6/12">
+                        <div class="flex items-center justify-center gap-2 mb-10">
+                            <span style="color: rgb(222,35,142);">♡</span>
+                            <p class="text-xl font-semibold">Loved by cool people from </p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-10">
+                            <img class="max-h-10" src="assets/img/logo-1.png" alt="">
+                            <img class="max-h-10" src="assets/img/logo-2.webp" alt="">
+                            <img class="max-h-10" src="assets/img/logo-3.webp" alt="">
+                            <img class="max-h-10" src="assets/img/logo-4.webp" alt="">
+                            <img class="max-h-10" src="assets/img/logo-5.webp" alt="">
+                            <img class="max-h-10" src="assets/img/logo-6.svg" alt="">
+                            <img class="max-h-10" src="assets/img/logo-7.webp" alt="">
+                            <img class="max-h-10" src="assets/img/logo-8.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project-section bg-[#030521] pt-28">
+        <div class="container">
+            <h2 class="text-white text-[60px] leading-[60px] max-w-[550px]">Beautiful designs, Endless possibilities </h2>
+            <div class="flex gap-10 mt-24">
+                <div class="w-4/12">
+                    <div class="border border-[#FFFFFF1A] p-6 flex flex-col">
+                        <a href="" class="capitalize text-[#D1D0DB] font-semibold text-2xl mb-2">amazing templates</a>
+                        <a href="" class="capitalize text-[#D1D0DB] text-lg underline decoration-[#3A30BA]">100+ beautiful templates</a>
+                    </div>
+                </div>
+                <div class="w-4/12">
+                    <div class="border border-[#FFFFFF1A] p-6 flex flex-col">
+                        <a href="" class="capitalize text-[#D1D0DB] font-semibold text-2xl mb-2">UI blocks</a>
+                        <a href="" class="capitalize text-[#D1D0DB] text-lg underline decoration-[#3A30BA]">250+ stunning UI blocks</a>
+                    </div>
+                </div>
+                <div class="w-4/12">
+                    <div class="border border-[#FFFFFF1A] p-6 flex flex-col">
+                        <a href="" class="capitalize text-[#D1D0DB] font-semibold text-2xl mb-2">elements</a>
+                        <div href="" class="capitalize text-[#D1D0DB] text-lg">20+ elements</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-28">
+            <img class="w-full" src="assets/img/projects.webp" alt="">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-28">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-6xl font-bold capitalize">no maintenance, more freedom</h2>
+                <div class="text-2xl">The perfect launchpad for your online presence</div>
+            </div>
+
+            <div class="featured-boxes">
+                <div class="flex flex-wrap -mx-12 mt-20">
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#8C3BFC]" color="[object Object]"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Reliable Hosting & CDN </h4>
+                        <p class="text-lg leading-[27px]">We host the websites on AWS & DigitalOcean and serve static content from our Global CDN</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#DE238E]" color="[object Object]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Reliable Hosting & CDN </h4>
+                        <p class="text-lg leading-[27px]">Every website built and hosted on our platform comes with a free SSL certificate issued by Let's Encrypt</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#27A6FE]" color="[object Object]" style=""><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" style=""></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Team Collaboration </h4>
+                        <p class="text-lg leading-[27px]">Collaborate with your team and get input on designs, feedback, or brainstorming sessions.</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#27A6FE]" color="[object Object]"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Payment Integration </h4>
+                        <p class="text-lg leading-[27px]">Integrate PayPal, Stripe, & Gumroad without code to receive payments from your users.</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#8C3BFC]" color="[object Object]"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Unlimited Storage & Bandwidth </h4>
+                        <p class="text-lg leading-[27px]">Don’t worry about your site’s storage and bandwidth because Dorik provides you with all the site storage you need.
+                        </p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#DE238E]" color="[object Object]" style=""><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Forms</h4>
+                        <p class="text-lg leading-[27px]">Add subscription & contact form easily to your website. Connect popular platforms like Zapier, MailChimp, etc.
+                        </p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#DE238E]" color="[object Object]"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">User Analytics </h4>
+                        <p class="text-lg leading-[27px]">Measure and analyze user data to get an understanding of user behavior across your web pages</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#27A6FE]"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Password Protected Pages </h4>
+                        <p class="text-lg leading-[27px]">Protect any page on your website with a password. Securely share your pages with your clients. 
+                        </p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#8C3BFC]" color="[object Object]"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Native SEO </h4>
+                        <p class="text-lg leading-[27px]">Optimize your content for SEO and social media to maximize the reach of each post.</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#8C3BFC]" color="[object Object]"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Custom Domain </h4>
+                        <p class="text-lg leading-[27px]">Connect your custom domain or subdomain easily from any domain provider to our platform.</p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#DE238E]" color="[object Object]"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+
+                        <h4 class="text-2xl font-bold my-4">AI Code Export</h4>
+                        <p class="text-lg leading-[27px]">Export your AI-generated website's clean and un-minified HTML/CSS/JS code with Media files.
+                        </p>
+                    </div>
+
+                    <div class="single-featured-box w-4/12 mb-10 px-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#27A6FE]" color="[object Object]"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+
+                        <h4 class="text-2xl font-bold my-4">Integrations</h4>
+                        <p class="text-lg leading-[27px]">Collect and send data to popular platforms like Zapier, MailChimp, Airtable, etc using forms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section bg-[#FFF9F3] py-28">
+        <div class="container">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="font-bold text-6xl mb-6">Affordable Pricing </h2>
+                <p class="leading-[27px]">Start building your websites for free. Upgrade to any paid plans to unlock features like forms, custom domains, and more.
+                </p>
+                <a href="" class="bg-[#3A30BA] text-white rounded-[5px] px-8 py-3 capitalize inline-block mt-6 duration-300 hover:bg-[#12126E] hover:text-white">
+                    see pricing
+                    <i class="fa fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section py-28">
+        <div class="container">
+            <div class="text-center max-w-[800px] mx-auto">
+                <h2 class="font-bold text-6xl mb-6">Extended Guides, Live Support & Community to help you </h2>
+            </div>
+
+            <div class="flex mt-14 gap-10">
+
+                <div class="single-support-box w-4/12 bg-[#F6F6FC] p-8 pt-12 rounded-[10px] border-b-[3px] border-[#8C3BFC]">
+                    <h4 class="capitalize font-bold text-2xl mb-4">documentation</h4>
+                    <p>We have extensive documentation on getting started with Dorik, as well as how to design and customize your website.</p>
+                    <a href="" class="font-medium text-base inline-block mt-6 capitalize">dorik helpdesk <i class="fa fa-arrow-right text-sm ml-2"></i></a>
+                </div>
+
+                <div class="single-support-box w-4/12 bg-[#F6F6FC] p-8 pt-12 rounded-[10px] border-b-[3px] border-[#DE238E]">
+                    <h4 class="capitalize font-bold text-2xl mb-4">Live Chat Support</h4>
+                    <p>We are always available on our support channels to help you. Live chat with us or send an email, we will get back to you asap.</p>
+                    <a href="" class="font-medium text-base inline-block mt-6 capitalize">start live chat<i class="fa fa-arrow-right text-sm ml-2"></i></a>
+                </div>
+
+                <div class="single-support-box w-4/12 bg-[#F6F6FC] p-8 pt-12 rounded-[10px] border-b-[3px] border-[#FFCC85]">
+                    <h4 class="capitalize font-bold text-2xl mb-4">Online Forum </h4>
+                    <p>We have a dedicated forum to communicate with our users. In addition to us, the community helps each other to grow.</p>
+                    <a href="" class="font-medium text-base inline-block mt-6 capitalize">facebook community<i class="fa fa-arrow-right text-sm ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-[#030521] pt-28">
+        <div class="container">
+            <div class="text-center max-w-[800px] mx-auto mb-20">
+                <h2 class="font-bold text-6xl mb-6 text-white">Start Building Your Website!</h2>
+                <div class="footer-btn text-center mt-10 bg-center bg-no-repeat bg-[length:385px] bg-[url('assets/img/hero-btn-svg.svg')]">
+                    <a href="" class="boxed-btn capitalize bg-[#3A30BA] text-[#FFF9F3] text-xl font-medium py-4 px-8 rounded-[5px] inline-block duration-300 hover:bg-[#12126E] hover:text-[#fff]">try dorik now<i class="fa fa-angle-right ml-2"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-content border-t border-[#45426E] py-8 text-[#A2A1B7]">
+                <div class="flex gap-12">
+                    <div class="w-2/5">
+                        <img class="max-h-[46px] mb-8" src="assets/img/footer-logo.svg" alt="footer logo">
+                        <p class="text-base">❤️ This website is built with Dorik, without writing any code</p>
+                        <a href=""><img class="mt-4" src="assets/img/top-post-badge.svg" alt=""></a>
+                        <a href="" class="bg-[#2b2b2b] inline-block p-2 pr-16 rounded-lg mt-8">
+                            <div class="flex items-center gap-2">
+                                <div class="w-4 h-4 rounded-full bg-[#32B37E]"></div>
+                                <div class="text-base text-white">All systems operational</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-1/5 text-base">
+                        <div class="font-semibold text-white uppercase mb-2">general</div>
+                        <ul class="leading-8">
+                            <li><a href="" class="capitalize duration-300 hover:text-white">about dorik</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">public roadmap</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">changelog</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">affiliate program</a></li>
+                        </ul>
+
+                        <div class="font-semibold text-white uppercase mt-4">resources</div>
+                        <ul class="leading-8">
+                            <li><a href="" class="capitalize duration-300 hover:text-white">documentation</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">tutorial videos</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">community</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">dorik blog</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">free ilustrations</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">partners</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">ai tools directory</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">write for dorik</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/5 text-base">
+                        <div class="font-semibold text-white uppercase mb-2">follow us</div>
+                        <ul class="leading-8">
+                            <li><a href="" class="capitalize duration-300 hover:text-white">twitter</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">linkedIn</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">facebook</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">discord <i class="fab fa-discord text-[#FFCC85] ml-2"></i></a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">ai tools directory</a></li>
+                            <li><a href="" class="capitalize duration-300 hover:text-white">write for dorik</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/5">
+                        <div class="font-semibold text-white uppercase mb-2">partner program</div>
+                        <div class="text-sm">Earn up to 40% recurring commission</div>
+                        <a href="" class="text-[#FFCC85] mt-2 duration-300 hover:text-white inline-block mt-2">Become a Partner <i class="fa fa-arrow-right text-xs ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright border-t border-[#45426E] py-8 px-4">
+                <div class="flex items-center justify-between text-[#A2A1B7]">
+                    <div class="text-[#A2A1B7] text-sm">&copy; 2024 Dorik, Inc. All rights reserved</div>
+                    <ul class="flex gap-6">
+                        <li><a href="" class="capitalize text-sm duration-300 hover:text-white">terms & conditions</a></li>
+                        <li><a href="" class="capitalize text-sm duration-300 hover:text-white">privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

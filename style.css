@@ -1,0 +1,62 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #45426e;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #17134A;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+}
+
+.color-one{
+    color: #45426e;
+}
+
+.color-two{
+    color: #17134A;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+img {
+    /* display: block; */
+    max-width: 100%;
+    height: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+}
+
+/* Main CSS */
